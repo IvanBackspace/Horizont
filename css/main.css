@@ -187,7 +187,7 @@
 
 /* navbar ============================ */
 .header__wrapper .navbar .container {
-    justify-content: right;
+    justify-content: flex-end;
 }
 .navbar__container {
     padding-bottom: 19px;
