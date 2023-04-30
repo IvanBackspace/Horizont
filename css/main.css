@@ -1,0 +1,279 @@
+/* container ============================ */
+.container-header__top {
+    padding: 25px 20px 22px 20px; 
+}
+
+@media (max-width: 1500px) {
+    .container-header__top {
+        padding: 25px 20px 5px 20px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-header__top {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .address__text span {
+        line-height: 34px;
+    }
+    .address-header__top {
+        margin-top: 4px;
+    }
+}
+
+/* header ============================ */
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(1, 1, 1, 0.1);
+}
+.header__top-items {
+    display: flex;
+}
+.header__top-item {
+    display: flex;
+}
+
+.top-item__right {
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    .top-item__right {
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-item__right {
+        margin-left: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-item__right {
+        margin-left: 60px;
+    }
+}
+
+/* address ============================ */
+.address {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.address__text span {
+    line-height: 56px;
+}
+
+.address-header__top {
+    margin: 2px 0px 0px 80px;
+}
+.address__link {
+    color: #1DD3C7;
+    text-decoration: none;
+}
+
+@media (max-width: 1500px) {
+    .address {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1500px) {
+    .address__text span {
+        line-height: 34px;
+    }
+    .address-header__top {
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 991px) {
+    .address-header__top {
+        display: none;
+    }
+    .address {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+}
+
+
+/* phones ============================ */
+.phones__item {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+}
+.phones__item a{
+    color: #333333;
+    text-decoration: none;
+}
+.phones__item-text {
+    font-weight: 300;
+}
+.phones__item-text span{
+    color: #2BA0B2;
+}
+
+@media (max-width: 1500px) {
+    .phones__item {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 991px) {
+    .phones__item-text {
+        display: none;
+    }
+    .phones-header__top {
+        margin: auto;
+    }
+    .social-media-header__top {
+        margin: auto;
+    }
+}
+
+/* social-media ============================ */
+.social-media__items {
+    display: flex;
+}
+
+.social-media-header__top {
+    margin-left: 35px;
+}
+
+.social-media__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+    .social-media-header__top {
+        margin-left: 10px;
+        margin-bottom: 7px;
+    }
+    .social-media__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 991px) {
+    .social-media-header__top {
+        margin-top: 6px;
+    }
+}
+@media (min-width: 1500px) {
+    .social-media-header__top {
+        margin-top: 11px;
+    }
+}
+
+
+
+/* navbar ============================ */
+.header__wrapper .navbar .container {
+    justify-content: end;
+}
+.navbar__container {
+    padding-bottom: 19px;
+}
+.navbar-toggler {
+    padding: 0;
+    border: none;
+    margin-top: -70px;
+}
+.nav-item:not(:last-child) {
+    margin-right: 116px;
+}
+
+a.nav-link {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+@media (max-width: 1740px) {
+    .nav-item:not(:last-child) {
+        margin-right: 66px;
+    }
+}
+
+@media (max-width: 1500px) {
+    a.nav-link {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .navbar-nav {
+        padding-top: 14px;
+    }
+    .navbar__container {
+        padding-bottom: 9px;
+    }
+}
+
+@media (min-width: 991px) {
+    .navbar-address {
+        display: none;
+    } 
+    .navbar-nav {
+        border-top: 2px solid #2BA0B2;
+        padding-top: 24px;
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar-toggler {
+        margin-top: -81px;
+    }
+}
+
+
+/* call-doctor ============================ */
+.call-doctor {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: #1DD3C7;
+    border: none;
+    padding: 14px 72px;
+}
+.call-doctor-header {
+    margin-top: 26px;
+}
+
+@media (max-width: 1500px) {
+    .call-doctor {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 43px;
+    }
+    .call-doctor-header {
+        margin-top: 16px
+    }
+}
+
+@media (max-width: 991px) {
+    .call-doctor-header {
+        display: none;
+    }
+}
