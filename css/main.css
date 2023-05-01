@@ -503,6 +503,10 @@ a.nav-link {
         right: 0;
         bottom: 0;
     }
+    .call-doctor-header__banner {
+         width: 400px;
+         height: 60px;
+    }
 }
 
 @media (max-width: 666px) {
