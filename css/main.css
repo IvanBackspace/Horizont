@@ -25,7 +25,7 @@
 }
 
 /* header ============================ */
-.header {
+.header__wrapper {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(1, 1, 1, 0.1);
 }
@@ -197,10 +197,42 @@
     border: none;
     margin-top: -70px;
 }
-.nav-item:not(:last-child) {
-    margin-right: 116px;
-}
+.navbar-nav {
+    padding: 8px 10px;
 
+}
+.nav-item:not(:last-child) {
+    /* margin-right: 116px; */
+}
+.navbar-address {
+    padding: 10px;
+} 
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none;
+    background-color: #2BA0B2;
+    border-radius: 0;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: var(--bs-dropdown-link-active-bg);
+}
+.dropdown-menu__inner{
+    list-style: disc;
+    padding-left: 31px;
+}
+.dropdown-item {
+    color: #FFFFFF;
+}
+.dropdown-menu__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #333333;
+    list-style: none;
+}
 a.nav-link {
     font-family: 'Manrope';
     font-style: normal;
@@ -209,9 +241,31 @@ a.nav-link {
     line-height: 33px;
     color: #000000;
 }
-@media (max-width: 1740px) {
-    .nav-item:not(:last-child) {
-        margin-right: 66px;
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;; 
+    background-color: #2BA0B2;;
+}
+
+@media (min-width: 1740px) {
+    .navbar-nav__wrapper{
+        width: 1100px;
+    }
+}
+@media (max-width: 1740px) and (min-width: 1500px) {
+
+    .navbar-nav__wrapper{
+        width: 800px;
+    }
+}
+@media (min-width: 1500px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        margin-top: 37px;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1200px){
+    .navbar-nav__wrapper{
+        width: 777px;
     }
 }
 
@@ -226,8 +280,16 @@ a.nav-link {
     .navbar__container {
         padding-bottom: 9px;
     }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        margin-top: 25px;
+    }
+   
 }
-
+@media (max-width: 1200px) and (min-width: 991px){
+    .navbar-nav__wrapper{
+        width: 577px;
+    }
+}
 @media (min-width: 991px) {
     .navbar-address {
         display: none;
@@ -235,6 +297,36 @@ a.nav-link {
     .navbar-nav {
         border-top: 2px solid #2BA0B2;
         padding-top: 24px;
+    }
+    .navbar-nav__wrapper{
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-menu {
+        margin-left: 217px;
+        margin-top: -40px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-menu__inner {
+        background-color: white;
+    
+    }
+    .dropdown-item__inner {
+        color: #000000;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 991px) {
+    .nav-item:not(:last-child) {
+        margin-right: 0px;
+    }
+    .navbar-nav {
+        padding-top: 1px;
+    }
+    .navbar-address__text {
+        margin: 0;
+    }
+    .dropdown-menu__title {
+        display: none;
     }
 }
 
@@ -245,10 +337,12 @@ a.nav-link {
 }
 
 
+
 /* call-doctor ============================ */
 .call-doctor {
     font-family: 'Manrope';
     font-style: normal;
+
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
@@ -260,7 +354,13 @@ a.nav-link {
 .call-doctor-header {
     margin-top: 26px;
 }
-
+.call-doctor__menu {
+    display: flex;
+    justify-content: center;
+}
+.call-doctor__menu .call-doctor__menu-pop-up {
+    padding: 7px 82px;
+}
 @media (max-width: 1500px) {
     .call-doctor {
     font-weight: 600;
@@ -276,4 +376,143 @@ a.nav-link {
     .call-doctor-header {
         display: none;
     }
+}
+@media (min-width: 991px) {
+    .call-doctor__menu {
+        display: none;
+    }
+}
+
+
+/* card__header ============================ */
+.card-img {
+    max-width: 1054px;
+    position: absolute;
+    right: 0;
+}
+.card-img-overlay {
+    background-color: #1DD3C7;
+    color: white;
+}
+.card-header__banner {
+    width: 950px;
+    height: 448px;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    background: #2BA0B2;
+    margin-top: 97px;
+}
+
+.card-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.card-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}   
+.call-doctor-header__banner {
+    padding: 8px 65px;
+}   
+.card-body {
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1740px) {
+    .card-header__banner {
+        width: 700px;
+        margin-top: 67px;
+    }
+
+}
+@media (max-width: 1500px) {
+    .card-header__banner {
+        width: 600px;
+        margin-top: 47px;
+    }
+    .card-title {
+        font-size: 32px;
+    }
+    .card-text {
+        font-size: 16px;
+    }  
+
+}
+@media (min-width: 1500px) {
+    .card-header__banner-wrapper {
+        margin-right: 107px;
+    }
+
+}
+
+@media (max-width: 1268px) {
+    .card-header__banner {
+        margin-top: 0px;
+        width: 490px;
+    }
+    .card-img {
+        max-width: 1000px;
+    }
+
+}
+@media (max-width: 1146px) {
+    .card-header__banner {
+        margin-top: 0px;
+        width: 490px;
+        height: 360px;
+    }
+    .card-img {
+        max-width: 800px;
+    }
+
+}
+@media (max-width: 991px) {
+    .card-header__banner {
+        width: 90%;
+        text-align: center;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .card-header__banner-wrapper {
+        width: 100%;
+    }
+    .card-picture-mobil__header-banner {
+        max-height: 200px;
+    }
+    .card-title {
+        padding: 0 51px;
+    }
+}
+
+@media (min-width: 991px) {
+    .card-picture-mobil__header-banner {
+        display: none;
+    }
+    .card-header__banner-wrapper {
+        width: 485px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 666px) {
+    .card-picture-mobil__header-banner {
+        max-height: 100px;
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .card-text {
+        font-size: 16px;
+    }  
 }
